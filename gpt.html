@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="An advanced front-end page using HTML and CSS with a responsive design and modern layout.">
+    <meta name="keywords" content="HTML, CSS, Responsive Design, Advanced Layout">
+    <title>Advanced Front End Page</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header */
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1em 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            text-align: center;
+        }
+
+        /* Navigation */
+        nav {
+            background: #444;
+            color: #fff;
+            padding: 0.5em 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: #fff;
+            font-weight: bold;
+        }
+
+        /* Main Section */
+        .main {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 20px;
+            padding: 20px 0;
+        }
+
+        .sidebar {
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .content {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            margin-top: 0;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-title {
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        .card-description {
+            color: #666;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .main {
+                grid-template-columns: 1fr;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            .card-content {
+                padding: 10px;
+            }
+
+            .card-title {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Advanced Front End Page</h1>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container main">
+        <aside class="sidebar">
+            <h2>Sidebar</h2>
+            <p>This is the sidebar content. It can include links, additional information, or any other content.</p>
+        </aside>
+        <section class="content">
+            <article class="section">
+                <h2>Section 1</h2>
+                <p>This is the first section of the main content area. It includes some introductory text or
+                    information.</p>
+                <div class="card">
+                    <img src="https://via.placeholder.com/600x400" alt="Placeholder Image">
+                    <div class="card-content">
+                        <h3 class="card-title">Card Title 1</h3>
+                        <p class="card-description">This is a description for the first card. It includes some details
+                            about the content of the card.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="section">
+                <h2>Section 2</h2>
+                <p>This is the second section of the main content area. It includes additional information or content.
+                </p>
+                <div class="card">
+                    <img src="https://via.placeholder.com/600x400" alt="Placeholder Image">
+                    <div class="card-content">
+                        <h3 class="card-title">Card Title 2</h3>
+                        <p class="card-description">This is a description for the second card. It includes some details
+                            about the content of the card.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Advanced Front End Page. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Front End Page</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header */
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1em 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            text-align: center;
+        }
+
+        /* Main Section */
+        .main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px 0;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-title {
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        .card-description {
+            color: #666;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .card-content {
+                padding: 10px;
+            }
+
+            .card-title {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Advanced Front End Page</h1>
+        </div>
+    </header>
+    <main class="container main">
+        <div class="card">
+            <img src="https://via.placeholder.com/600x400" alt="Placeholder Image">
+            <div class="card-content">
+                <h2 class="card-title">Card Title 1</h2>
+                <p class="card-description">This is a description for the first card. It includes some details about the
+                    content of the card.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/600x400" alt="Placeholder Image">
+            <div class="card-content">
+                <h2 class="card-title">Card Title 2</h2>
+                <p class="card-description">This is a description for the second card. It includes some details about
+                    the content of the card.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/600x400" alt="Placeholder Image">
+            <div class="card-content">
+                <h2 class="card-title">Card Title 3</h2>
+                <p class="card-description">This is a description for the third card. It includes some details about the
+                    content of the card.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Advanced Front End Page. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML & CSS Example</title>
+    <style>
+        /* Box-sizing for all elements */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            background-color: #4A90E2;
+            color: white;
+            padding: 1em;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #FFD700;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            flex: 1;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: #4A90E2;
+        }
+
+        .card p {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #4A90E2;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: #4A90E2;
+            outline: none;
+        }
+
+        .form-group button {
+            padding: 10px 20px;
+            background-color: #4A90E2;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .form-group button:hover {
+            background-color: #357ABD;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        footer {
+            background-color: #4A90E2;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        @media (max-width: 600px) {
+            nav ul {
+                padding: 0;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 0;
+            }
+        }
+
+        fieldset {
+            border: 2px solid #4A90E2;
+            border-radius: 4px;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        legend {
+            color: #4A90E2;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Enhanced HTML & CSS Example</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis urna at ligula vehicula, et
+                venenatis odio cursus. Phasellus vestibulum eros nec suscipit auctor.</p>
+        </section>
+
+        <section class="card">
+            <h2>Gallery</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <audio controls>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        <section class="card">
+            <h2>Contact Us</h2>
+            <form action="/submit" method="post">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <select id="subject" name="subject" required>
+                            <option value="" disabled selected>Select a subject</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="support">Support</option>
+                        </select>
+                    </div>
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Enhanced HTML & CSS Example. All rights reserved.</p>
+    </footer>
+</body>
+
+</html> --> -->

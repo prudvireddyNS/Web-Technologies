@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            background-color: cornflowerblue;
+            padding: 1em;
+            color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+
+        footer {
+            text-align: center;
+            background-color: cornflowerblue;
+            padding: 10px;
+            color: #fff;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            flex: 1;
+        }
+
+        .card {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .card h2 {
+            color: cornflowerblue;
+            margin-top: 5px;
+        }
+
+        .card p {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: cornflowerblue;
+        }
+
+        .form-group legend,
+        .form-group input,
+        .form-group select {
+            color: cornflowerblue;
+            width: 100%;
+            /* padding: 10px; */
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .form-group legend:focus,
+        .form-group input:focus,
+        .form-group select:focus {
+            border-color: cornflowerblue;
+            outline: none;
+        }
+
+        .form-group button {
+            padding: 20px;
+            background-color: cornflowerblue;
+        }
+
+        .form-group button:hover {
+            color: cornflowerblue;
+        }
+
+        .video-container {
+            position: relative;
+            overflow: hidden;
+            max-width: 100%;
+            border-radius: 8px;
+            height: 0;
+            padding-bottom: 56.25%;
+            margin-bottom: 20px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        @media (max-width: 600px) {
+            nav ul {
+                padding: 0;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 0;
+            }
+        }
+
+        fieldset {
+            border: 2px solid cornflowerblue;
+            border-radius: 4px;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        legend {
+            color: cornflowerblue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Enhanced HTML & CSS Example</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="card">
+            <h2>About US</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos quo non porro asperiores
+                laborum dolorum! Ipsa perferendis illum voluptatum pariatur, consequatur, nobis voluptates, deserunt cum
+                mollitia possimus dolores voluptatibus non?</p>
+        </section>
+        <section class="card">
+            <h2>Gallery</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <audio controls>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+        <section class="card">
+            <h2>Contact Us</h2>
+            <form action="/submit" method="post">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="mail">Email:</label>
+                        <input type="text" id="mail">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" rows="5"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <select name="subject" id="subject">
+                            <option value="">Select a subject</option>
+                            <option value="inquiry">General Inquiry</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="support">Support</option>
+                        </select>
+                    </div>
+                    <button type="submit" id="form-group">Submit</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Enhanced HTML & CSS Example. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
